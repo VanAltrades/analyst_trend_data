@@ -2,6 +2,8 @@
 
 ## Data in Motion: Time Series Visualizations using Python [The Programmatic Analyst's Handbook]
 
+[Medium Article](https://medium.com/@vanaltrades/data-in-motion-time-series-visualizations-using-python-the-programmatic-analysts-handbook-2ca82f9acfe3)
+
 In previous repositories, I have explained how analysts can build foundational infrastructure for their operational needs.
 
 [Setting up a Python Environment and Basic Version Control using Git](https://github.com/VanAltrades/analyst-python-environment)
@@ -183,7 +185,7 @@ get_trend_bar(cpi, x_axis="DATE", y_axis="CPIAUCSL", title="U.S. Federal Reserve
 
 > example data: Historic Events
 
-To beter breakout your analysis, analysts will want to visualize metric trends by dimension breakouts.
+To better breakout your analysis, analysts will want to visualize metric trends by dimension breakouts.
 
 ```
 # demo.ipynb
@@ -192,7 +194,7 @@ from src.ingest_data.structured.files import get_json_data
 history = get_json_data(method="custom",path=".\src\data\en_historic_events.json", orient="index")
 ```
 
-Dimensions must be properly grouped to avoid erronious visualizations and reporting. For the historical dataset, I quickly group the date dimension and the categorical dimension and count event occurances.
+Dimensions must be properly grouped to avoid erroneous visualizations and reporting. For the historical dataset, I quickly group the date dimension and the categorical dimension and count event occurances.
 
 ```
 # demo.ipynb
